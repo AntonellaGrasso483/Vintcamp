@@ -27,7 +27,7 @@ function validacionForm(e) {
 $("#submitFormulario").click(function(e) {
     if ($("#validarNombre").val() != "" && $("#validarEmail").val() != "" && $("#validarNumero").val() != "" && $("#validarConsulta").val() != "") {
         e.preventDefault();
-        $("#camposVacios").empty();
+        $("#modalContacto").trigger('reset');
         validacionForm(e);
         successContacto();
         $("#modalContacto").modal("hide");
