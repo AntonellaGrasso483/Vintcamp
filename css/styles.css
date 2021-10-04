@@ -1,0 +1,60 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body {
+    background-image: url(../multimedia/Tienda.png);
+    background-size: 100%;
+}
+
+.navbar {
+    background-color: rgb(206, 141, 189);
+}
+.contenedorBienvenida {
+    width: 100%;
+    padding-top: 200px;
+    text-align: center;
+    background-color:rgba(179, 122, 164, 0.7);
+    height: 500px;
+}
+
+.contenedorF3 {
+    line-height: 20px;
+}
+
+#productosDisponibles {
+    display: grid;
+    background-color: whitesmoke;
+    padding: 20px;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 30px;
+    grid-template-rows: repeat(4, 1fr);
+    row-gap: 30px;
+}
+
+.producto-imagen, .producto.prenda, .producto-precio, .btn-borrar {
+    padding: 5px;
+}
+
+
+#logout {
+    justify-self: center;
+}
+
+.modal-header, .modal-footer {
+    background-color: rgb(228, 205, 222);;
+}
+
+.modal-body {
+    background-color: whitesmoke;
+}
+
+td {
+    padding: 10px;
+}
